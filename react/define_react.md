@@ -53,7 +53,7 @@ The methods above are now considerred legacy, since the introduction of the so-c
 - useState - Returns a stateful value (with initialState), and a function to update it.
 - useEffect - Runs after the render is committed to the screen. Use cases include api calls, timers, loggers etc.
 - useLayoutEffect - Runs before browser paint. Used for visible DOM mutations, so that users don't perceive a visual inconsistency.
-- useContext - Returns the context of the nearest context provider. Used to avoid passing props to deeply nested children.
+- useContext - Returns the context of a given context provider. Used to avoid passing props to deeply nested children.
 - useReducer - An alternative to useState. Returns the current state paired with a dispatch method. Use it to pass state along with method to to alter that state from a child component.
 - useMemo
 - useCallback
@@ -61,10 +61,20 @@ The methods above are now considerred legacy, since the introduction of the so-c
 - useImperativeHandle
 - useDebugValue
 
-### What are the differences between a class component and functional component?
+### What are the differences between class and functional components?
 
-Class components have local state and lifecycle hooks.
-Functional components can receive props, but do not have local state or hooks. They can change the state of a parent class component only indirectly - via a callback function that uses setState passed as a prop.
+_Prior to React Hooks_
+
+Class components - can have a local state and lifecycle methods
+
+Function components - can receive props, but do not have a local state nor lifecycle methods. They also don't have render method. They can change the state of a parent class component only indirectly - via a callback function that uses setState passed as a prop.
+
+_After the introduction of Hook_
+
+React Function Components -- also known as React Functional Components -- are the status quo of writing modern React applications. In the past, there have been various React Component Types, but with the introduction of React Hooks it's possible to write your entire application with just functions as React components.
+
+https://www.robinwieruch.de/react-function-component#react-arrow-function-component
+https://www.freecodecamp.org/news/functional-components-vs-class-components-in-react/
 
 ### What are controlled and uncontrolled components in React?
 

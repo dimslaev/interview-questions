@@ -8,7 +8,7 @@ Objects can be created based on the the constructor function using the `new` key
 function Human(firstName, lastName) {
   this.firstName = firstName;
   this.lastName = lastName;
-  this.fullName = function() {
+  this.fullName = function () {
     return this.firstName + " " + this.lastName;
   };
 }

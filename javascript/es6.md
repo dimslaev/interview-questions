@@ -2,6 +2,4 @@
 
 ### Arrow functions
 
-### Const & Let
-
 ### Async / Await

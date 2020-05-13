@@ -2,7 +2,7 @@
 
 When data is immutable, its state cannot change after it’s created. If you want to change an immutable object, you can’t. Instead, you create a new object with the new value.
 
-Immutability is a hot topic because it relates to current paradigms (such as functional programming, ) and libraries (such as React, Vue.js, etc).
+Immutability is a hot topic because it relates to current paradigms (such as functional programming) and libraries (such as React, Vue.js, etc).
 
 For example, in React, one should never mutate the state property of a component directly, but only through the `setState` method. The `setState` method creates a new copy of the virtual dom and applies changes to that copy without touching the previous state object.
 
